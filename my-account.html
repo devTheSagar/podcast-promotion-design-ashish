@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Tolmol - Cleaning Service </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" rel="stylesheet" href="css/fontawesome.min.css" />
+  <link type="text/css" rel="stylesheet" href="css/aos.css" />
+  <link type="text/css" rel="stylesheet" href="css/style-switcher.css" />
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- preloader start -->
+  <div class="preloader js-preloader">
+    <div></div>
+  </div>
+  <!-- preloader end -->
+
+<!-- page wrapper start -->
+<div class="page-wrapper">
+
+  <!-- header start -->
+  <header class="header js-header">
+    <div class="container">
+      <div class="logo" data-aos="fade-down" data-aos-duration="1000">
+        <a href="#">Podcast <span>Promotion</span></a>
+      </div>
+      <button type="button" class="nav-toggler js-nav-toggler" data-aos="fade-down" data-aos-duration="1000">
+        <span></span>
+      </button>
+      <nav class="nav js-nav">
+        <ul data-aos="fade-down" data-aos-duration="1000">
+          <li><a href="index.html">home</a></li>
+          <li><a href="#about">about</a></li>
+
+          <!-- Dropdown for Services -->
+          <li class="dropdown">
+            <a href="#services">services</a>
+            <ul class="dropdown-menu">
+              <li><a href="service.html">Podcast Promotion</a></li>
+              <li><a href="service.html">Spotify Promotion</a></li>
+            </ul>
+          </li>
+
+
+          <li><a href="#pricing">pricing</a></li>
+          <li><a href="#team">team</a></li>
+          <li><a href="#">testimonials</a></li>
+          <li><a href="contact.html">contact</a></li>
+          <!-- <li><a href="#">account</a></li> -->
+           <!-- Dropdown for account -->
+          <li class="dropdown">
+            <a href="#services">Account</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Sign Up</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+  <!-- header end -->
+
+
+<section class="section-padding account">
+  <div class="container">
+    <div class="grid account-grid">
+
+      <!-- Sidebar -->
+      <aside class="account-aside">
+        <div class="card account-card">
+          <div class="account-user">
+            <div class="avatar">
+              <img id="avatarPreview" src="img/user.png" alt="User avatar">
+            </div>
+            <div>
+              <h3 class="u-name">Your Name</h3>
+              <p class="u-email">you@example.com</p>
+            </div>
+          </div>
+
+          <nav class="account-nav" role="tablist" aria-label="Account navigation">
+            <button class="anav active" data-tab="overview">Overview</button>
+            <button class="anav" data-tab="profile">Profile</button>
+            <button class="anav" data-tab="orders">Orders</button>
+            <button class="anav" data-tab="billing">Billing</button>
+            <button class="anav" data-tab="security">Security</button>
+            <button class="anav" data-tab="notifications">Notifications</button>
+            <a href="#logout" class="anav link danger">Log out</a>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <div class="account-main">
+        <div class="card account-card">
+
+          <!-- Overview -->
+          <section id="tab-overview" class="apane active" role="tabpanel">
+            <h3 class="pane-title">Overview</h3>
+            <div class="grid kpi-grid">
+              <div class="kpi">
+                <span class="kpi-label">Active Plan</span>
+                <strong class="kpi-value">Basic</strong>
+              </div>
+              <div class="kpi">
+                <span class="kpi-label">Total Orders</span>
+                <strong class="kpi-value">12</strong>
+              </div>
+              <div class="kpi">
+                <span class="kpi-label">Downloads (30d)</span>
+                <strong class="kpi-value">8,240</strong>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <h4 class="mt-10">Recent Orders</h4>
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr><th>#</th><th>Service</th><th>Status</th><th>Date</th><th>Total</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>1024</td><td>Podcast Promotion — Basic</td><td><span class="badge success">Completed</span></td><td>Aug 02, 2025</td><td>$99</td></tr>
+                  <tr><td>1019</td><td>Audiogram Copy Pack</td><td><span class="badge warning">In progress</span></td><td>Jul 26, 2025</td><td>$39</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- Profile -->
+          <section id="tab-profile" class="apane" role="tabpanel">
+            <h3 class="pane-title">Profile</h3>
+            <form class="grid prof-grid" action="#" method="post" novalidate>
+              <div class="col">
+                <div class="input-box">
+                  <label for="pname">Full name</label>
+                  <input type="text" id="pname" class="input-control" placeholder="Your full name" required>
+                </div>
+                <div class="input-box">
+                  <label for="pemail">Email</label>
+                  <input type="email" id="pemail" class="input-control" placeholder="you@example.com" required>
+                </div>
+                <div class="input-box">
+                  <label for="pphone">Phone</label>
+                  <input type="tel" id="pphone" class="input-control" placeholder="+8801XXXXXXXXX">
+                </div>
+                <div class="input-box">
+                  <label for="pcountry">Country</label>
+                  <select id="pcountry" class="input-control">
+                    <option value="" disabled selected>Select</option>
+                    <option>Bangladesh</option><option>United States</option>
+                    <option>Canada</option><option>United Kingdom</option><option>Australia</option>
+                  </select>
+                </div>
+                <div class="input-box">
+                  <label for="pwebsite">Podcast link / Website</label>
+                  <input type="url" id="pwebsite" class="input-control" placeholder="https://">
+                </div>
+              </div>
+              <div class="col">
+                <div class="input-box">
+                  <label for="pavatar">Avatar</label>
+                  <input type="file" id="pavatar" class="input-control" accept="image/*">
+                  <small>JPG/PNG, &lt; 2MB</small>
+                </div>
+                <div class="input-box">
+                  <label for="pabout">About you</label>
+                  <textarea id="pabout" class="input-control" rows="6" placeholder="Short bio…"></textarea>
+                </div>
+              </div>
+              <div class="col-full">
+                <button type="submit" class="btn">Save changes</button>
+              </div>
+            </form>
+          </section>
+
+          <!-- Orders -->
+          <section id="tab-orders" class="apane" role="tabpanel">
+            <h3 class="pane-title">Orders</h3>
+            <div class="table-wrap">
+              <table class="table">
+                <thead>
+                  <tr><th>#</th><th>Service</th><th>Status</th><th>Date</th><th>Total</th><th>Action</th></tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1024</td><td>Podcast Promotion — Basic</td>
+                    <td><span class="badge success">Completed</span></td>
+                    <td>Aug 02, 2025</td><td>$99</td>
+                    <td><a href="#" class="table-link">View</a></td>
+                  </tr>
+                  <tr>
+                    <td>1019</td><td>Audiogram Copy Pack</td>
+                    <td><span class="badge warning">In progress</span></td>
+                    <td>Jul 26, 2025</td><td>$39</td>
+                    <td><a href="#" class="table-link">View</a></td>
+                  </tr>
+                  <tr>
+                    <td>1012</td><td>Show Notes Optimization</td>
+                    <td><span class="badge danger">Awaiting payment</span></td>
+                    <td>Jul 08, 2025</td><td>$59</td>
+                    <td><a href="#" class="table-link">Pay</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <!-- Billing -->
+          <section id="tab-billing" class="apane" role="tabpanel">
+            <h3 class="pane-title">Billing</h3>
+            <div class="grid billing-grid">
+              <div class="col">
+                <h4>Saved Payment Method</h4>
+                <div class="pay-card">
+                  <div>Visa •••• 4242</div>
+                  <small>Expires 07/28 — Name: Your Name</small>
+                  <div class="pay-actions">
+                    <button class="btn btn-light" type="button">Update</button>
+                    <button class="btn btn-light" type="button">Remove</button>
+                  </div>
+                </div>
+                <p class="muted">We use secure payment processing. You can also pay via PayPal at checkout.</p>
+              </div>
+              <div class="col">
+                <h4>Billing Address</h4>
+                <form class="billing-form" action="#" method="post">
+                  <div class="input-box"><label for="b1">Address line 1</label><input id="b1" class="input-control" type="text"></div>
+                  <div class="input-box"><label for="b2">Address line 2</label><input id="b2" class="input-control" type="text"></div>
+                  <div class="grid mini-grid">
+                    <div class="input-box"><label for="bcity">City</label><input id="bcity" class="input-control" type="text"></div>
+                    <div class="input-box"><label for="bzip">ZIP</label><input id="bzip" class="input-control" type="text"></div>
+                  </div>
+                  <button class="btn" type="submit">Save billing</button>
+                </form>
+              </div>
+            </div>
+          </section>
+
+          <!-- Security -->
+          <section id="tab-security" class="apane" role="tabpanel">
+            <h3 class="pane-title">Security</h3>
+            <form class="grid sec-grid" action="#" method="post" novalidate>
+              <div class="col">
+                <div class="input-box">
+                  <label for="curpass">Current password</label>
+                  <input id="curpass" type="password" class="input-control" placeholder="••••••••" required>
+                </div>
+                <div class="input-box">
+                  <label for="newpass">New password</label>
+                  <input id="newpass" type="password" class="input-control" placeholder="At least 6 characters" minlength="6" required>
+                </div>
+                <div class="input-box">
+                  <label for="confpass">Confirm new password</label>
+                  <input id="confpass" type="password" class="input-control" placeholder="Re-type password" minlength="6" required>
+                  <small id="secMatch" class="muted"></small>
+                </div>
+                <button class="btn" type="submit">Update password</button>
+              </div>
+
+              <div class="col">
+                <div class="toggle">
+                  <input type="checkbox" id="2fa">
+                  <label for="2fa">Enable 2-Step Verification (email code)</label>
+                </div>
+                <div class="toggle">
+                  <input type="checkbox" id="loginAlerts" checked>
+                  <label for="loginAlerts">Send login alerts to email</label>
+                </div>
+              </div>
+            </form>
+          </section>
+
+          <!-- Notifications -->
+          <section id="tab-notifications" class="apane" role="tabpanel">
+            <h3 class="pane-title">Notifications</h3>
+            <form class="notif-form" action="#" method="post">
+              <div class="toggle">
+                <input type="checkbox" id="n-orders" checked>
+                <label for="n-orders">Order updates</label>
+              </div>
+              <div class="toggle">
+                <input type="checkbox" id="n-reports" checked>
+                <label for="n-reports">Monthly performance report</label>
+              </div>
+              <div class="toggle">
+                <input type="checkbox" id="n-tips">
+                <label for="n-tips">Growth tips & resources</label>
+              </div>
+              <button class="btn" type="submit">Save preferences</button>
+            </form>
+          </section>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- footer start -->
+  <footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <!-- Column 1 -->
+      <div class="footer-col">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="#">About Company</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Testimonials</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-col">
+        <h3>What We Offer</h3>
+        <ul>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="footer-col">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Get the App</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 (Social links you already had) -->
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- footer end -->
+
+</div>
+<!-- page wrapper end -->
+
+
+<!-- style switcher start  -->
+<div class="style-switcher js-style-switcher">
+  <button type="button" class="style-switcher-toggler js-style-switcher-toggler">
+    <i class="fas fa-cog"></i>
+  </button>
+  <div class="style-switcher-main">
+    <h2>style switcher</h2>
+    <div class="style-switcher-item">
+      <p>Theme Color</p>
+      <div class="theme-color">
+        <input type="range" min="0" max="360" class="hue-slider js-hue-slider">
+        <div class="hue">Hue: <span class="js-hue"></span></div>
+      </div>
+    </div>
+    <div class="style-switcher-item">
+      <label class="form-switch">
+        <span>Dark Mode</span>
+        <input type="checkbox" class="js-dark-mode">
+        <div class="box"></div>
+      </label>
+    </div>
+  </div>
+</div>
+<!-- style switcher end  -->
+
+<script src="js/aos.js"></script>
+<script src="js/main.js"></script>
+<script src="js/style-switcher.js"></script>
+
+
+
+
+<script>
+  (function(){
+    // Tab switch
+    const tabs = document.querySelectorAll('.account-nav .anav[data-tab]');
+    const panes = document.querySelectorAll('.apane');
+    tabs.forEach(btn=>{
+      btn.addEventListener('click', ()=>{
+        const id = btn.dataset.tab;
+        tabs.forEach(b=>b.classList.remove('active'));
+        panes.forEach(p=>p.classList.remove('active'));
+        btn.classList.add('active');
+        document.getElementById('tab-'+id).classList.add('active');
+      });
+    });
+
+    // Avatar preview
+    const up = document.getElementById('pavatar');
+    const preview = document.getElementById('avatarPreview');
+    if(up && preview){
+      up.addEventListener('change', (e)=>{
+        const f = e.target.files && e.target.files[0];
+        if(!f) return;
+        if(!f.type.startsWith('image/')) return;
+        const url = URL.createObjectURL(f);
+        preview.src = url;
+      });
+    }
+
+    // Security match hint
+    const np = document.getElementById('newpass');
+    const cp = document.getElementById('confpass');
+    const hint = document.getElementById('secMatch');
+    function check(){
+      if(!np || !cp) return;
+      if(!cp.value){ hint.textContent=''; return; }
+      if(np.value === cp.value){ hint.style.color='green'; hint.textContent='Passwords match'; }
+      else { hint.style.color='crimson'; hint.textContent='Passwords do not match'; }
+    }
+    if(np) np.addEventListener('input', check);
+    if(cp) cp.addEventListener('input', check);
+  })();
+</script>
+
+</body>
+</html>
